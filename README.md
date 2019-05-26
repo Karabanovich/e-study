@@ -1,3 +1,3 @@
 # e-study
 Дробушевич лаба
-npm run start
+`npm run start`
