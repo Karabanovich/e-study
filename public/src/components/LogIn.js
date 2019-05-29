@@ -1,12 +1,12 @@
 let sign_pg = document.createElement('div');
 sign_pg.className = 'sign_pg';
-let heart = document.createElement('div');
-heart.innerHTML = 'favorite';
-heart.className = 'material-icons sign_heart';
+// let heart = document.createElement('div');
+// heart.innerHTML = 'favorite';
+// heart.className = 'material-icons sign_heart';
 let sign_text = document.createElement('div');
 sign_text.className = 'sign_text roman';
-sign_text.innerHTML = 'Sign in to e-Student';
-let sign_wrong = document.createElement('div')
+sign_text.innerHTML = 'PLEASE, WELCOME!';
+let sign_wrong = document.createElement('div');
 sign_wrong.className = 'sign_wrong';
 sign_wrong.innerHTML = 'Incorrect Login or Password';
 let sign_form = document.createElement('div');
@@ -63,7 +63,7 @@ function LogIn() {
     sign_form.appendChild(sign_form_text2);
     sign_form.appendChild(sign_input_pass);
     sign_form.appendChild(sign_button_div);
-    sign_pg.appendChild(heart);
+    // sign_pg.appendChild(heart);
     sign_pg.appendChild(sign_text);
     sign_pg.appendChild(sign_form);
     content.appendChild(sign_pg);

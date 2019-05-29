@@ -24,16 +24,16 @@ p{
     width: 100%;
     position: fixed;
     top: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background: #4caf50;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background: #4ab1af;
     display: flex;
     justify-content: space-around;
     z-index: 10;
 
 }
 .main{
-    background: #f4f4f4;
+    background: #caf1f4;
     margin-top: 62px;
     display: flex;
     flex-direction: column;
@@ -51,6 +51,9 @@ p{
     align-items: center;
     background: inherit;
 }
+.col-md-1{
+    position: relative;
+}
 .sign{
     display: flex;
     flex-direction: column;
@@ -67,15 +70,19 @@ p{
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: 'Concert One', cursive;
 }
 .material-icons{
     font-size: 100px;
 }
-.roman{
-    font-family:Georgia, Times, "Times New Roman", serif;
+.roman,.list-group-item,.all_courses,.student_courses{
+    /*font-family:Georgia, Times, "Times New Roman", serif;*/
+    font-family: 'Concert One', cursive;
 }
 .helv{
-    font-family:Arial, Helvetica, sans-serif;
+    /*font-family:Arial, Helvetica, sans-serif;*/
+    font-family: 'Concert One', cursive;
+
 }
 .username{
     font-size: 15pt;
@@ -209,10 +216,10 @@ img,.post{
     font-size: 16px;
 }
 .selected1{
-    background: #26cc8a
+    background-color: #26cc8a
 }
 .selected2{
-    background: #2660cc
+    background-color: #2660cc
 }
 .create_schedule_btn{
     background: bisque
@@ -444,4 +451,10 @@ img,.post{
     .photo_place{
         width: 300px;
     }
+}
+
+.multiline
+{
+    /*padding:20px;*/
+    white-space: pre-wrap;
 }

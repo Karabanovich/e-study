@@ -12,7 +12,8 @@ const coursesActions = {
                         if (elem.professor === username)
                             return elem;
                         if (elem.professor === username + '?') {
-                            elem.name = elem.name + '?'
+                            elem.taken = true;
+                            elem.name = elem.name + '?';
                             return elem
                         }
                     }
@@ -20,7 +21,8 @@ const coursesActions = {
                         if (elem.users.find(el => el === username))
                             return elem;
                         if (elem.users.find(el => el === username + '?')) {
-                            elem.name = elem.name + '?'
+                            elem.taken = true;
+                            elem.name = elem.name + '?';
                             return elem
                         }
                     }
@@ -196,7 +198,8 @@ const Student =
         return elem.users.find(el => el === username)
     },
     markAsEnrolledIn: function (elem, index) {
-        elem.users[index] = elem.users[index].slice(0, -1)
+        elem.users[index] = elem.users[index].slice(0, -1);
+        elem.taken = false;
     },
     save_course: function (username, save) {
         let students = JSON.parse(fs.readFileSync(studentsPath));
@@ -227,7 +230,8 @@ const Professor =
         return elem.professor == username
     },
     assignProfessor: function (elem) {
-        elem.professor = elem.professor.slice(0, -1)
+        elem.professor = elem.professor.slice(0, -1);
+        elem.taken = false;
     },
     save_course: function (username, save) {
         let professors = JSON.parse(fs.readFileSync(professorsPath));

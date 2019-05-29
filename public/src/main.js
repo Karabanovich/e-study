@@ -8,8 +8,10 @@ let header = document.createElement('div');
 const N = 5;
 header.className = 'header';
 header.innerHTML = `
-<div class="fl  white">
-    E-Student
+<div class="fl  white multiline">
+    PROGRAMMING TECHNOLOGY. LAB 2.2
+    Alekseenko Ivan \\ Drozd Mark \\ Izobova Maria \\ Shuldov Nikita
+    
 </div>
 <div class="fl">
     <div class="sign">
